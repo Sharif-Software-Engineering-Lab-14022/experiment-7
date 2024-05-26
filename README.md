@@ -102,6 +102,28 @@ DATABASES = {
 ![build.png](images%2Fbuild.png)
 ![up.png](images%2Fup.png)
 
+### ارسال درخواست به وب‌سرور
+- ساخت کاربر
+<img width="1248" alt="1" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/e43aad35-702d-4974-b0f7-bf4feac31c31">
+
+- وارد شدن کاربر
+<img width="1248" alt="1-2" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/0a38e2c7-3ace-4327-9a56-5115965b70ce">
+
+- ساخت یادداشت ۱
+<img width="1248" alt="2" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/23f35400-32d5-4688-bbde-2c424921db13">
+
+- ساخت یادداشت ۲
+<img width="1248" alt="3" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/1737ac95-4158-45fe-b5ad-f41555440105">
+
+- گرفتن تمام یادداشت‌ها
+<img width="1248" alt="4" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/1a0b8431-c1f0-4638-8aa6-a35910048cc5">
+
+- پاک کردن یادداشت ۱
+<img width="1248" alt="5" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/ae806b70-90c1-4923-8e05-aef2f228c4c6">
+
+- گرفتن تمام یادداشت‌ها
+<img width="1248" alt="6" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/8fb3153c-5f6f-4008-91f8-0691efeead15">
+
 
 ## پرسش‌ها
 ### ۱. وظایف Dockerfile، image و container را توضیح دهید.
