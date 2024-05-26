@@ -16,6 +16,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Copy the entrypoint script
+COPY entrypoint.sh /app/entrypoint.sh
+COPY wait-for-it.sh /app/wait-for-it.sh
+
+# Ensure the entrypoint script is executable
+RUN chmod +x /app/entrypoint.sh /app/wait-for-it.sh
+
+# Set the entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 ```
  - FROM python:3: مشخص می کند که ایمیج پایه ای از پایتون ۳ استفاده شود.
@@ -24,12 +34,12 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
  - COPY requirements.txt .: فایل requirements.txt را از میزبان به دایرکتوری کار کانتینر کپی می کند.
  - RUN pip install --no-cache-dir -r requirements.txt: وابستگی های پایتون را از فایل requirements.txt نصب می کند بدون استفاده از کش برای کاهش اندازه تصویر.
  - COPY . .: دایرکتوری فعلی (فایل های پروژه) را از میزبان به دایرکتوری کار کانتینر کپی می کند.
+ - COPY entrypoint.sh | wait-for-it.sh: این دستورات اسکریپت‌های entrypoint.sh و wait-for-it.sh را از host به دایرکتوری /app در ایمیج Docker کپی می‌کنند.
+ - RUN chmod: این دستور مجوزهای اجرا برای entrypoint.sh و wait-for-it.sh را تنظیم می‌کند تا اطمینان حاصل شود که آنها می‌توانند در داخل کانتینر اجرا شوند.
  - CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]: مشخص می کند که هنگام شروع کانتینر اجرا شود، سرور جنگو را بر روی 0.0.0.0:8000 شروع می کند.
 
 ### فایل docker-compose.yml:
 ```yaml
-version: '3'
-
 services:
   web:
     build:
