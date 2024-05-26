@@ -102,7 +102,7 @@ DATABASES = {
 ![build.png](images%2Fbuild.png)
 ![up.png](images%2Fup.png)
 
-### ارسال درخواست به وب‌سرور
+## ارسال درخواست به وب‌سرور
 - ساخت کاربر
 <img width="1248" alt="1" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/e43aad35-702d-4974-b0f7-bf4feac31c31">
 
@@ -123,6 +123,13 @@ DATABASES = {
 
 - گرفتن تمام یادداشت‌ها
 <img width="1248" alt="6" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/8fb3153c-5f6f-4008-91f8-0691efeead15">
+
+## تعامل با داکر
+- مشاهده‌ی imageها و containerها: container اصلی که در آن وب‌سرور در حال اجرا است، مورد اول است. از container دوم برای پایگاه داده در این آزمایش استفاده شده است.
+<img width="1088" alt="7) images and containers" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/c2f72389-26fd-46ce-989a-2372db16b642">
+
+- دستور `echo` اجرا شده است.
+<img width="1088" alt="8) running docker" src="https://github.com/Sharif-Software-Engineering-Lab-14022/experiment-7/assets/79265203/0485f6cf-b32d-4a82-a474-799ecf3ba787">
 
 
 ## پرسش‌ها
